@@ -55,6 +55,7 @@ public class RegisterActivity extends AppCompatActivity {
         if(esCorreoValido(email)){
             if (password.equals(passwordRepeat)) {
                 progressBar.setVisibility(View.VISIBLE);
+
                 firebaseAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
                             @Override

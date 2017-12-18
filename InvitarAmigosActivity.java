@@ -50,7 +50,7 @@ public class InvitarAmigosActivity extends AppCompatActivity {
 
                 //sendSMS(contacto.getNumero(),mensaje);
                 Intent whatsappIntent = new Intent(Intent.ACTION_SEND);
-                whatsappIntent.setType("text/plainl");
+                whatsappIntent.setType("text/plain");
                 whatsappIntent.setPackage("com.whatsapp");
                 whatsappIntent.putExtra(Intent.EXTRA_TEXT, mensaje);
                 try {
